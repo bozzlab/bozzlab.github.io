@@ -14,11 +14,6 @@
   </url>
   
   <url>
-    <loc>/post/model_stc_p1/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/contact/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
@@ -32,6 +27,16 @@
   <url>
     <loc>/profile/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/model_stc_p2/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/model_stc_p1/</loc>
+    <lastmod>2018-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
