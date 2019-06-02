@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2] :: Bozzlab</title>
+    <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2] :: Bozzlab — Personal Website</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -28,7 +28,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2] :: Bozzlab — " />
+<meta name="twitter:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2] :: Bozzlab — Personal Website" />
 <meta name="twitter:description" content="Peem Srinikorn บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
  บทความนี้เป็น Part 2 จะเกี่ยวข้องกับการ Predict TL ในระบบผนัง Double Panel, Double Panel with Absorber, Double Panel with Stud, Double Panel with Absorber and Stud, Algorithm flow รวมถึงเปรียบเทียบว่าผนังแต่ละประเภทมีลักษณะผลการ Predict ค่า Sound Tranmission loss (TL)อย่างไรบ้าง
  สำหรับใครที่ยังไม่ได้อ่าน Part 1 เกี่ยวกับ STC/TL ในฉบับเบื้องต้นและวิธีการ Predict แบบ Single Panel (Click ที่นี้ !!)
@@ -36,13 +36,13 @@
  รูปที่ 1 ระบบผนังจำแนกตามประเภทการคำนวณ 
 ใน Part 1 เราได้อธิบายเรื่องของวิธีการ Predict TL ของ Single Panel ไปแล้ว ซึ่งใน Part นี้จะเข้าเรื่อง Double Panel, Absorber, Connection ซึ่งเป็นระบบที่พบได้ทั่วไปตามตึกบ้าน อาคารโดยเฉพาะกับ ผนังเบา" />
 <meta name="twitter:site" content="/" />
-<meta name="twitter:creator" content="Bozz" />
+<meta name="twitter:creator" content="Bozz Srinikorn" />
 <meta name="twitter:image" content="/p2.jpeg">
 
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2] :: Bozzlab — ">
+<meta property="og:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2] :: Bozzlab — Personal Website">
 <meta property="og:description" content="Peem Srinikorn บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
  บทความนี้เป็น Part 2 จะเกี่ยวข้องกับการ Predict TL ในระบบผนัง Double Panel, Double Panel with Absorber, Double Panel with Stud, Double Panel with Absorber and Stud, Algorithm flow รวมถึงเปรียบเทียบว่าผนังแต่ละประเภทมีลักษณะผลการ Predict ค่า Sound Tranmission loss (TL)อย่างไรบ้าง
  สำหรับใครที่ยังไม่ได้อ่าน Part 1 เกี่ยวกับ STC/TL ในฉบับเบื้องต้นและวิธีการ Predict แบบ Single Panel (Click ที่นี้ !!)
@@ -138,7 +138,7 @@
             2018-11-12
         </span>
       
-      <span class="post-author">— Written by Bozz</span>
+      <span class="post-author">— Written by Bozz Srinikorn</span>
       
         <span class="post-read-time">— 8 min read</span>
       
@@ -218,44 +218,42 @@
 <p>ลองเขียน Code ตามไปเลย</p>
 </blockquote>
 
-<pre><code class="language-python">
-def freq(self):
-        me = ((self.pair*(self.c**2))/self.d)*((1/self.Mass_A)+(1/self.Mass_B))
-        f0 = (1/(2*np.pi))*(np.sqrt(me))
-        fl = 55/self.d
-        return f0,fl
+<pre><code class="language-python">def freq(self):
+    me = ((self.pair*(self.c**2))/self.d)*((1/self.Mass_A)+(1/self.Mass_B))
+    f0 = (1/(2*np.pi))*(np.sqrt(me))
+    fl = 55/self.d        return f0,fl
 
-    def Con1(self): # f &lt; f0
-        f0 = DoublePanel.freq(self)[0]
-        f = self.f
-        TL_con1 = [20*np.log10(f[i]*(self.Mass_A+self.Mass_B))-47 for i in range(0,len(f)) if f[i] &lt; f0]
-        return TL_con1
+def Con1(self): # f &lt; f0
+    f0 = DoublePanel.freq(self)[0]
+    f = self.f
+    TL_con1 = [20*np.log10(f[i]*(self.Mass_A+self.Mass_B))-47 for i in range(0,len(f)) if f[i] &lt; f0]
+    return TL_con1
 
-    def Con2(self): # f &gt; f0 and f &lt; fl
-        R_A = self.Panel_A
-        R_B = self.Panel_B
-        f = self.f
-        f0 = DoublePanel.freq(self)[0]
-        fl = DoublePanel.freq(self)[1]
-        TL_Con2 = [ R_A[i] + R_B[i] + 20*np.log10(f[i]*self.d) -29 for i in range(0,len(f)) if f[i] &gt;= f0 and f[i] &lt;= fl]
-        return TL_Con2
+def Con2(self): # f &gt; f0 and f &lt; fl
+    R_A = self.Panel_A
+    R_B = self.Panel_B
+    f = self.f
+    f0 = DoublePanel.freq(self)[0]
+    fl = DoublePanel.freq(self)[1]
+    TL_Con2 = [ R_A[i] + R_B[i] + 20*np.log10(f[i]*self.d) -29 for i in range(0,len(f)) if f[i] &gt;= f0 and f[i] &lt;= fl]
+    return TL_Con2
 
-    def Con3(self): # f &gt; fl
-        R_A = self.Panel_A
-        R_B = self.Panel_B
-        f = self.f
-        fl = DoublePanel.freq(self)[1]
-        TL_Con3 = [ R_A[i] + R_B[i] + 6 for i in range(0,len(f)) if f[i] &gt; fl ]
-        return TL_Con3
+def Con3(self): # f &gt; fl
+    R_A = self.Panel_A
+    R_B = self.Panel_B
+    f = self.f
+    fl = DoublePanel.freq(self)[1]
+    TL_Con3 = [ R_A[i] + R_B[i] + 6 for i in range(0,len(f)) if f[i] &gt; fl ]
+    return TL_Con3
 
-    def Total_Double(self): # Total TL of Double Panel
-        f = self.f
-        R1 = DoublePanel.Con1(self)
-        R2 = DoublePanel.Con2(self)
-        R3 = DoublePanel.Con3(self)
-        R_Total = R1 + R2 + R3
-        R_TotalSTC = [R_Total[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
-        return R_TotalSTC,R_Total
+def Total_Double(self): # Total TL of Double Panel
+    f = self.f
+    R1 = DoublePanel.Con1(self)
+    R2 = DoublePanel.Con2(self)
+    R3 = DoublePanel.Con3(self)
+    R_Total = R1 + R2 + R3
+    R_TotalSTC = [R_Total[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
+    return R_TotalSTC,R_Total
 </code></pre>
 
 <h2 id="frequency-mass-air-mass-resonance">Frequency Mass-Air-Mass resonance</h2>
@@ -298,28 +296,27 @@ def freq(self):
 <p>ใน Code ก็จะต้องแบ่ง real, imag ตามเช่นกัน</p>
 </blockquote>
 
-<pre><code class="language-python"> def Absorber(self): # Absorber Cal
-        f = self.f
-        fl = DoublePanel.freq(self)[1]
-        f_ab = [f[i] for i in range(0,len(f)) if f[i] &gt; fl]
-        R_A = self.Panel_A
-        R_B = self.Panel_B
-        k = [(2 * np.pi * f_ab[i]) / self.c for i in range(0, len(f_ab))]
-        omega = [(2 * np.pi * f_ab[i]) for i in range(0, len(f_ab))]
-        prob = [((omega[i] / self.c) * 0.189 * (self.pair*f_ab[i] / self.flow) ** -0.595) + ( 1j * (omega[i] / self.c) * ((1 + 0.0978 * (self.pair * f_ab[i]) / (self.flow)) ** -0.7)) for i in range(0, len(f_ab))]
-        alpha = [prob[i].real for i in range(0, len(prob))]
-        beta = [prob[i].imag for i in range(0, len(prob))]
-        TL = [R_A[i] + R_B[i] for i in range(0, len(f)) if f[i] &gt; fl]
-        TL_Ab = [TL[i] + 8.6 * alpha[i] * self.d + 20*np.log10(beta[i] / k[i]) for i in range(0, len(f_ab))]
-        return TL_Ab
+<pre><code class="language-python">def Absorber(self): # Absorber Cal
+    f = self.f
+    fl = DoublePanel.freq(self)[1]
+    f_ab = [f[i] for i in range(0,len(f)) if f[i] &gt; fl]
+    R_A = self.Panel_A
+    R_B = self.Panel_B
+    k = [(2 * np.pi * f_ab[i]) / self.c for i in range(0, len(f_ab))]
+    omega = [(2 * np.pi * f_ab[i]) for i in range(0, len(f_ab))]
+    prob = [((omega[i] / self.c) * 0.189 * (self.pair*f_ab[i] / self.flow) ** -0.595) + ( 1j * (omega[i] / self.c) * ((1 + 0.0978 * (self.pair * f_ab[i]) / (self.flow)) ** -0.7)) for i in range(0, len(f_ab))]
+    alpha = [prob[i].real for i in range(0, len(prob))]
+    beta = [prob[i].imag for i in range(0, len(prob))]
+    TL = [R_A[i] + R_B[i] for i in range(0, len(f)) if f[i] &gt; fl]
+    TL_Ab = [TL[i] + 8.6 * alpha[i] * self.d + 20*np.log10(beta[i] / k[i]) for i in range(0, len(f_ab))]
+    return TL_Ab
 
-    def Total_Double_Absorb(self): # Total TL Double Panel with Absorber
-        f = self.f
-        R_TL = DoublePanel.Con1(self) + DoublePanel.Con2(self)
-        R_Ab = R_TL + DoublePanel.Absorber(self)
-        R_AbSTC = [R_Ab[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
-        return R_AbSTC,R_Ab
-
+def Total_Double_Absorb(self): # Total TL Double Panel with Absorber
+    f = self.f
+    R_TL = DoublePanel.Con1(self) + DoublePanel.Con2(self)
+    R_Ab = R_TL + DoublePanel.Absorber(self)
+    R_AbSTC = [R_Ab[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
+    return R_AbSTC,R_Ab
 </code></pre>
 
 <h2 id="double-panel-with-connection">Double Panel with Connection</h2>
@@ -370,38 +367,37 @@ def freq(self):
 <p>ลองเขียน Code ไปเลย จะได้ไม่งง</p>
 </blockquote>
 
-<pre><code class="language-python"> def Stud(self): #stud line connection calculation
-        deltaRb = 10*np.log10(self.spac*self.fc_A)+ 20*np.log10((self.Mass_A/(self.Mass_A+self.Mass_B)))-18
-        fcl = (((self.Mass_A*np.sqrt(self.fc_B))+(self.Mass_B*np.sqrt(self.fc_A)))/(self.Mass_A+self.Mass_B))**2
-        deltaRm = 10*np.log10(((self.Area_A)/(self.Height_A))*((np.pi*fcl)/(2*self.c)))
+<pre><code class="language-python">def Stud(self): #stud line connection calculation
+    deltaRb = 10*np.log10(self.spac*self.fc_A)+ 20*np.log10((self.Mass_A/(self.Mass_A+self.Mass_B)))-18
+    fcl = (((self.Mass_A*np.sqrt(self.fc_B))+(self.Mass_B*np.sqrt(self.fc_A)))/(self.Mass_A+self.Mass_B))**2
+    deltaRm = 10*np.log10(((self.Area_A)/(self.Height_A))*((np.pi*fcl)/(2*self.c)))
+    return deltaRb,deltaRm
 
-        return deltaRb,deltaRm
+def Total_Double_Stud(self): #Total TL of Double Panel with Stud
+    f = self.f
+    fl = DoublePanel.freq(self)[1]
+    deltaRb = DoublePanel.Stud(self)[0]
+    deltaRm = DoublePanel.Stud(self)[1]
+    R = DoublePanel.Total_Double(self)[1]
+    R_1 = [ R[i] for i in range(0,len(f)) if f[i] &lt;= fl*0.5 ]
+    R_2 = [ R[i]-deltaRb for i in range(0,len(f)) if f[i] &gt;= fl*0.5 and f[i] &lt;= fl]
+    R_3 = [ R[i]-deltaRm for i in range(0,len(f)) if f[i] &gt;= fl]
+    R_Total = R_1+R_2+R_3
+    R_TDS_STC = [R_Total[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
+    return R_TDS_STC,R_Total
 
-    def Total_Double_Stud(self): #Total TL of Double Panel with Stud
-        f = self.f
-        fl = DoublePanel.freq(self)[1]
-        deltaRb = DoublePanel.Stud(self)[0]
-        deltaRm = DoublePanel.Stud(self)[1]
-        R = DoublePanel.Total_Double(self)[1]
-        R_1 = [ R[i] for i in range(0,len(f)) if f[i] &lt;= fl*0.5 ]
-        R_2 = [ R[i]-deltaRb for i in range(0,len(f)) if f[i] &gt;= fl*0.5 and f[i] &lt;= fl]
-        R_3 = [ R[i]-deltaRm for i in range(0,len(f)) if f[i] &gt;= fl]
-        R_Total = R_1+R_2+R_3
-        R_TDS_STC = [R_Total[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
-        return R_TDS_STC,R_Total
-
-    def Total_Double_Absorb_Stud(self): #Total TL of Double Panel with Absorber and Stud
-        f = self.f
-        fl = DoublePanel.freq(self)[1]
-        deltaRb = DoublePanel.Stud(self)[0]
-        deltaRm = DoublePanel.Stud(self)[1]
-        R = DoublePanel.Total_Double_Absorb(self)[1]
-        R_1 = [ R[i] for i in range(0,len(f)) if f[i] &lt;= 0.5 * fl ]
-        R_2 = [ R[i]-deltaRb for i in range(0,len(f)) if f[i] &gt;= 0.5*fl and f[i] &lt;= fl]
-        R_3 = [ R[i]-deltaRm for i in range(0,len(f)) if f[i] &gt;= fl]
-        R_Total = R_1+R_2+R_3
-        R_TDAS_STC = [R_Total[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
-        return R_TDAS_STC, R_Total
+def Total_Double_Absorb_Stud(self): #Total TL of Double Panel with Absorber and Stud
+    f = self.f
+    fl = DoublePanel.freq(self)[1]
+    deltaRb = DoublePanel.Stud(self)[0]
+    deltaRm = DoublePanel.Stud(self)[1]
+    R = DoublePanel.Total_Double_Absorb(self)[1]
+    R_1 = [ R[i] for i in range(0,len(f)) if f[i] &lt;= 0.5 * fl ]
+    R_2 = [ R[i]-deltaRb for i in range(0,len(f)) if f[i] &gt;= 0.5*fl and f[i] &lt;= fl]
+    R_3 = [ R[i]-deltaRm for i in range(0,len(f)) if f[i] &gt;= fl]
+    R_Total = R_1+R_2+R_3
+    R_TDAS_STC = [R_Total[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]
+    return R_TDAS_STC, R_Total
 </code></pre>
 
 <h2 id="ผลการ-predict">ผลการ Predict</h2>
@@ -445,15 +441,13 @@ def freq(self):
 
 <p>การทำงานเบื้องต้นก็คือให้ Action เป็นเหมือนตัว console ควมคุม class ต่าง ๆ โดยจะ import ทุกไฟล์ ทุก class ให้มาอยู่ใน Action</p>
 
-<pre><code class="language-python">
-from DoublePanel import DoublePanel
+<pre><code class="language-python">from DoublePanel import DoublePanel
 from SinglePanel_A import SinglePanel_A
 from SinglePanel_B import SinglePanel_B
 from SinglePanel import SinglePanel
 from Show import Show
 
 if __name__ =='__main__':
-  
     #Attribute SinglePanel ([Mass(kg)],[Thickness(mm)],[Modulus(GPa)],[Damping Ratio],[Width(m)],[Height(m)])
     Panel_A = SinglePanel_A(12,15,2.5,0.1,3,3)
     Panel_B = SinglePanel_B(12,15,2.5,0.1,3,3)
@@ -469,7 +463,6 @@ if __name__ =='__main__':
     Show.data() #read TL data as Dictionary 
     Show.data_pd() #read TL data as DataFrames
     Show.info() #read STC and Deficiency Values as Dictionary
-
 </code></pre>
 
 <p>จะเห็นได้ว่าเราได้นำ class จากทุกไฟล์มาไว้ในไฟล์เดียวเพื่อให้ง่ายต่อการเรียกใช้งาน โดย Panel_A,Panel_B จะทำหน้าที่ Predict ค่า TL ที่เป็น SinglePanel ออกมาจาก class เราไม่ต้องไปใช้งานในไฟล์นั้น ๆ แล้วก็อปค่าออกมาอีกที หลังจากที่เราได้ค่า TL ของ SinglePanel แล้ว ขั้นตอนไปก็คือหากเราต้องการ Predict TL แบบ Double เราก็นำค่า TL จาก SinglePanel ในแต่ละด้านมาคำนวณได้เลย และป้อนค่าอื่น ๆ เข้าไปใน class เช่น ระยะห่างระหว่าง Panel A และ B หรือ Flow resistance ของฉนวน และสุดท้ายคือ Spacing Stud</p>

@@ -1,48 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bozzlab</title>
-    <link>/</link>
-    <description>Recent content on Bozzlab</description>
+    <title>Acoustics on Bozzlab</title>
+    <link>/tags/acoustics/</link>
+    <description>Recent content in Acoustics on Bozzlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bozzlab @ 2019</copyright>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/acoustics/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title> !&gt;_ Bozzlab</title>
-      <link>/post/hello/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hello/</guid>
-      <description>Bozzlab I told you already, GENIUS!</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/contact/</guid>
-      <description>.fa { padding: 20px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%; }
-.fa:hover { opacity: 0.5; }
-.fa-facebook { background: #3B5998; color: white; }</description>
-    </item>
-    
-    <item>
-      <title>Profile</title>
-      <link>/profile/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/profile/</guid>
-      <description>Peem Srinikorn Python/Back-End Developer.
-Bangkok,Thailand
-     
-Education [{ &amp;quot;Education&amp;quot; : { &amp;quot;Degree&amp;quot;: &amp;quot;Bachelor in Engineering&amp;quot;, &amp;quot;Field&amp;quot;: { &amp;quot;Department&amp;quot;: &amp;quot;Computer Engineering&amp;quot;, &amp;quot;Major&amp;quot;: &amp;quot;Music Engineering and Multimedia&amp;quot;, }, &amp;quot;Year&amp;quot;: 2014-2019, &amp;quot;University&amp;quot;: &amp;quot;King Mongkut&#39;s Institute of Technology Ladkrabang (KMTIL)&amp;quot; }]  Experience &amp;lt;Work Exp=&amp;quot;Work Experience&amp;quot;&amp;gt; &amp;lt;May 2019 - Present&amp;gt; • Software Engineer @ &amp;lt;Quantera Co.,LTD&amp;gt; | |&amp;gt; Improving the Automative Robot trading system using MQL4 | ----------------------|---------------------------------------------------------- &amp;lt;Dec 2018 - Mar 2019&amp;gt; • Software Developer @ &amp;lt;Blue System Technology Co.</description>
-    </item>
     
     <item>
       <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2]</title>
@@ -72,15 +40,6 @@ Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulati
 คือ ดัชนีที่บ่งบอกถึงประสิทธิภาพของการป้องกันเสียง ในทีนี้เราจะหมายถึง ผนัง กำแพง กระจก ที่เป็นตัวกลางกั้นห้องนั้น (Partition) ว่ามีประสิทธิภาพป้องกันเสียงได้เท่าไร
 โดยจากรูปที่ 1 จะเห็นว่า มีพลังงานเสียงความถี่หลายจำนวน ซึ่งมีระดับความดังที่แตกต่างกัน และความดังเสียงที่ผ่านกำแพงนี้ไปก็จะถูกลดทอนในระดับที่แตกต่างกันตามความถี่ต่าง ๆ เช่น
  ความถี่ี่ 125 Hz 80–60 = 20 dB</description>
-    </item>
-    
-    <item>
-      <title>Article/Blog</title>
-      <link>/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/archive/</guid>
-      <description></description>
     </item>
     
   </channel>

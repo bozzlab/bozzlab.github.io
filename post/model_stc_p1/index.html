@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) :: Bozzlab</title>
+    <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) :: Bozzlab — Personal Website</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -30,7 +30,7 @@ Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulati
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) :: Bozzlab — " />
+<meta name="twitter:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) :: Bozzlab — Personal Website" />
 <meta name="twitter:description" content="บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
 Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulation, Stud Connection
  ก่อนอื่น เรามาดูกันว่า Sound Tranmission Loss , STC คืออะไรกันก่อน Sound Transmission Loss คืออะไร ?
@@ -46,7 +46,7 @@ Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulati
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) :: Bozzlab — ">
+<meta property="og:title" content="มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) :: Bozzlab — Personal Website">
 <meta property="og:description" content="บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
 Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulation, Stud Connection
  ก่อนอื่น เรามาดูกันว่า Sound Tranmission Loss , STC คืออะไรกันก่อน Sound Transmission Loss คืออะไร ?
@@ -373,8 +373,7 @@ Sound Transmission Loss คืออะไร ?</p>
 <p>ตอนนี้เราได้เงื่อนไขและสมการในระดับนึงแล้วลองเขียนเป็น Code ดูนะครัช</p>
 </blockquote>
 
-<pre><code class="language-python">
-class SinglePanel():
+<pre><code class="language-python">class SinglePanel():
 
     def __init__(self,Mass,Thick,Modulus,Damp,width,height): #Essential Attribute
         self.Mass = Mass #Mass as Kg unit
@@ -399,7 +398,6 @@ class SinglePanel():
                in range(0, len(f)) if f[i] &gt;= fc]
         TL = T_1 + T_2
         return TL
-
 </code></pre>
 
 <p><br></p>
@@ -427,28 +425,26 @@ class SinglePanel():
 </blockquote>
 
 <pre><code class="language-python">def FqLow(self):  # calc low-frequency correction (TL below 200 Hz)
-        fc = SinglePanel.Crifreq(self)
-        fLow = [50, 63, 80, 100, 125, 160, 200]
-        omegaC = 2 * np.pi * fc
-        kw = [(2 * np.pi * fLow[i]) / self.c for i in range(0, len(fLow))]
-        omega = [(2 * np.pi * fLow[i]) for i in range(0, len(fLow))]
-        Rlow = [-10 * np.log10(np.log(kw[i] * (self.Area ** 0.5))) + 20 * np.log10(1 - (omega[i] / omegaC) ** 2) for i
-                in range(0, len(fLow))]
-        return Rlow
+    fc = SinglePanel.Crifreq(self)
+    fLow = [50, 63, 80, 100, 125, 160, 200]
+    omegaC = 2 * np.pi * fc
+    kw = [(2 * np.pi * fLow[i]) / self.c for i in range(0, len(fLow))]
+    omega = [(2 * np.pi * fLow[i]) for i in range(0, len(fLow))]
+    Rlow = [-10 * np.log10(np.log(kw[i] * (self.Area ** 0.5))) + 20 * np.log10(1 - (omega[i] / omegaC) ** 2) for i in range(0, len(fLow))]
+    return Rlow
 
-    def Values(self):  # Summarize formula
-        TL = SinglePanel.Masslaw(self)
-        Rlow = SinglePanel.FqLow(self)
-        fc = SinglePanel.Crifreq(self)
-        f = self.f
-        for i in range(0, len(f)):
-            if f[i] &lt;= 200:
-                TL[i] = TL[i] + Rlow[i]
-            else:
-                TL[i] = TL[i]
-        R_TL = [TL[i] for i in range(0, len(f)) if
-                f[i] &gt;= 125 and f[i] &lt;= 4000]  # slice data as STC freq range 125 Hz - 4 KHz
-        return R_TL, TL #[0] for STC / [1] for fullrange values
+def Values(self):  # Summarize formula
+    TL = SinglePanel.Masslaw(self)
+    Rlow = SinglePanel.FqLow(self)
+    fc = SinglePanel.Crifreq(self)
+    f = self.f 
+    for i in range(0, len(f)):
+        if f[i] &lt;= 200:
+            TL[i] = TL[i] + Rlow[i]
+        else:
+            TL[i] = TL[i]
+    R_TL = [TL[i] for i in range(0, len(f)) if f[i] &gt;= 125 and f[i] &lt;= 4000]  # slice data as STC freq range 125 Hz - 4 KHz
+    return R_TL, TL #[0] for STC / [1] for fullrange values
 
 </code></pre>
 
@@ -471,50 +467,45 @@ class SinglePanel():
 </blockquote>
 
 <pre><code class="language-python">def Eval_STC(self):  # Evaluation Standard Transmission loss
-        s = [[i - 16, i - 13, i - 10, i - 7, i - 4, i - 1, i, i + 1, i + 2, i + 3, i + 4, i + 4, i + 4, i + 4, i + 4,
-              i + 4] for i in
-             range(150)]  # STC Contourf = [12.45,14,15.45,20.9,22.9,24.9,26.9,28.9,31,32.9,34.8,37,38.9,40.9,17.7,20.8]
-        f = SinglePanel.Values(self)[0]
-        for x in range(0, len(s)):  # STC Contour Condition
-            for y in range(0, 16):
-                if f[y] &lt; s[x][y]:
-                    s[x][y] = abs(f[y] - s[x][y])  # TL below STC contour
-                else:
-                    s[x][y] = 0
-        x = [s[t] if sum(s[t]) &lt;= 32 else False for t in range(0, len(s))]  # total deficiency condition
-        y = [x[t] for t in range(0, len(x)) if x[t] != False]  # silce total deficiency &gt; 32
-        for i_1 in range(0, len(y)):
-            for i_2 in range(0, 16):
-                if y[i_1][i_2] &gt; 8: # index more than 8
-                    y[i_1][i_2] = False
+    s = [[i - 16, i - 13, i - 10, i - 7, i - 4, i - 1, i, i + 1, i + 2, i + 3, i + 4, i + 4, i + 4, i + 4, i + 4,i + 4] for i in range(150)]  # STC Contourf = [12.45,14,15.45,20.9,22.9,24.9,26.9,28.9,31,32.9,34.8,37,38.9,40.9,17.7,20.8]
+    f = SinglePanel.Values(self)[0]
+    for x in range(0, len(s)):  # STC Contour Condition
+        for y in range(0, 16):
+            if f[y] &lt; s[x][y]:
+                s[x][y] = abs(f[y] - s[x][y])  # TL below STC contour
+            else:
+                s[x][y] = 0
+    x = [s[t] if sum(s[t]) &lt;= 32 else False for t in range(0, len(s))]  # total deficiency condition
+    y = [x[t] for t in range(0, len(x)) if x[t] != False]  # silce total deficiency &gt; 32
+    for i_1 in range(0, len(y)):
+        for i_2 in range(0, 16):
+            if y[i_1][i_2] &gt; 8: # index more than 8
+                y[i_1][i_2] = False
 
-        num = [z for z in y if not any(isinstance(e, (str, bool)) for e in z)] # clear False
-        STC = (len(num) - 1) # Maximum STC
-        Def = sum(num[STC]) # Deficiency STC
-        return STC, Def
+    num = [z for z in y if not any(isinstance(e, (str, bool)) for e in z)] # clear False
+    STC = (len(num) - 1) # Maximum STC
+    Def = sum(num[STC]) # Deficiency STC
+    return STC, Def
 
-    def plot(self):  # Visualize the Transmission loss data and STC-Contour
-        TL = SinglePanel.Values(self)[0]
-        v = SinglePanel.Eval_STC(self)[0]
-        s = [v - 16, v - 13, v - 10, v - 7, v - 4, v - 1, v, v + 1, v + 2, v + 3, v + 4, v + 4, v + 4, v + 4,
-             v + 4,v+4]  # STC Contour
-        f = [125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250, 1600, 2000, 2500, 3150,
-             4000]  # 1/3 Octave freq band
-        xi = [i for i in range(0, len(f))]
-        plt.figure(figsize=(18, 8))
-        plt.plot(TL, 'b', linewidth=2)
-        plt.plot(s, 'g--', linewidth=1.8)
-        plt.annotate('Initials : Peem Srinikorn', xy=(0.85, 0.04), fontsize=12, bbox=dict(facecolor='cyan', alpha=0.5),
+def plot(self):  # Visualize the Transmission loss data and STC-Contour
+    TL = SinglePanel.Values(self)[0]
+    v = SinglePanel.Eval_STC(self)[0]
+    s = [v - 16, v - 13, v - 10, v - 7, v - 4, v - 1, v, v + 1, v + 2, v + 3, v + 4, v + 4, v + 4, v + 4, v + 4,v+4]  # STC Contour
+    f = [125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250, 1600, 2000, 2500, 3150,4000]  # 1/3 Octave freq band
+    xi = [i for i in range(0, len(f))]
+    plt.figure(figsize=(18, 8))
+    plt.plot(TL, 'b', linewidth=2)
+    plt.plot(s, 'g--', linewidth=1.8)
+    plt.annotate('Initials : Peem Srinikorn', xy=(0.85, 0.04), fontsize=12, bbox=dict(facecolor='cyan', alpha=0.5),
                      xycoords='axes fraction')
-        plt.title('Single Panel Sound Transmission loss', fontsize=18)
-        plt.xlabel('1/3 Octave Frequency [Hz]', fontsize=15)
-        plt.ylabel('R Transmiss loss [dB]', fontsize=15)
-        plt.legend(['Transmission loss', 'STC {}'.format(s[6])], fontsize=15, loc='best')
-        plt.xticks(xi, f, fontsize=12)
-        plt.yticks(fontsize=12)
-        plt.grid(linestyle='-', linewidth=0.5)
-        return plt.show()
-
+    plt.title('Single Panel Sound Transmission loss', fontsize=18)
+    plt.xlabel('1/3 Octave Frequency [Hz]', fontsize=15)
+    plt.ylabel('R Transmiss loss [dB]', fontsize=15)
+    plt.legend(['Transmission loss', 'STC {}'.format(s[6])], fontsize=15, loc='best')
+    plt.xticks(xi, f, fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.grid(linestyle='-', linewidth=0.5)
+    return plt.show()
 </code></pre>
 
 <h2 id="ว-ธ-ใช-code-ง-าย-ๆ-นะคร-บ">วิธีใช้ code ง่าย ๆ นะครับ</h2>
