@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Bozzlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Bozzlab@2019</copyright>
+    <copyright>Bozzlab @ 2019</copyright>
     <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
@@ -30,7 +30,6 @@
       <description>Peem Srinikorn บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
  บทความนี้เป็น Part 2 จะเกี่ยวข้องกับการ Predict TL ในระบบผนัง Double Panel, Double Panel with Absorber, Double Panel with Stud, Double Panel with Absorber and Stud, Algorithm flow รวมถึงเปรียบเทียบว่าผนังแต่ละประเภทมีลักษณะผลการ Predict ค่า Sound Tranmission loss (TL)อย่างไรบ้าง
  สำหรับใครที่ยังไม่ได้อ่าน Part 1 เกี่ยวกับ STC/TL ในฉบับเบื้องต้นและวิธีการ Predict แบบ Single Panel (Click ที่นี้ !!)
-Click
 
  รูปที่ 1 ระบบผนังจำแนกตามประเภทการคำนวณ 
 ใน Part 1 เราได้อธิบายเรื่องของวิธีการ Predict TL ของ Single Panel ไปแล้ว ซึ่งใน Part นี้จะเข้าเรื่อง Double Panel, Absorber, Connection ซึ่งเป็นระบบที่พบได้ทั่วไปตามตึกบ้าน อาคารโดยเฉพาะกับ ผนังเบา</description>
