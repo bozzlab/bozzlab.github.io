@@ -6,13 +6,14 @@
     <description>Recent content on Bozzlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Bozzlab@2019</copyright>
     <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bozzlab</title>
+      <title> !&gt;_ Bozzlab</title>
       <link>/post/hello/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -37,7 +38,9 @@
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/profile/</guid>
-      <description>Peem Srinikorn Python/Back-End Developer, Bangkok,Thailand
+      <description>Peem Srinikorn Python/Back-End Developer.
+Bangkok,Thailand
+     
 Education [ Education ]: [2014 - 2019] | B.Eng: in Computer Engineering: (Music Engineering &amp;amp; Multimedia) | @: King Mongkut&#39;s Institute of Technology Ladkrabang (KMTIL)  Experience &amp;lt;Work Exp=&amp;quot;Work Experience&amp;quot;&amp;gt; &amp;lt;May 2019 - Present&amp;gt; • Software Engineer @ &amp;lt;Quantera Co.,LTD&amp;gt; | |&amp;gt; Improving the Automative Robot trading system using MQL4 | ----------------------|---------------------------------------------------------- &amp;lt;Dec 2018 - Mar 2019&amp;gt; • Software Developer @ &amp;lt;Blue System Technology Co.</description>
     </item>
     
@@ -56,8 +59,14 @@ Education [ Education ]: [2014 - 2019] | B.Eng: in Computer Engineering: (Music 
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/model_stc_p1/</guid>
-      <description>Peem Srinikorn บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
-Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulation, Stud Connection ก่อนอื่น เรามาดูกันว่า Sound Tranmission Loss , STC คืออะไรกันก่อน Sound Transmission Loss คืออะไร ?</description>
+      <description>บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
+Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulation, Stud Connection
+ก่อนอื่น เรามาดูกันว่า Sound Tranmission Loss , STC คืออะไรกันก่อน Sound Transmission Loss คืออะไร ?
+Sound Transmission Loss คืออะไร ? 
+ รูปที่ 1 แสดงตัวอย่าง Sound Transmission loss 
+คือ ดัชนีที่บ่งบอกถึงประสิทธิภาพของการป้องกันเสียง ในทีนี้เราจะหมายถึง ผนัง กำแพง กระจก ที่เป็นตัวกลางกั้นห้องนั้น (Partition) ว่ามีประสิทธิภาพป้องกันเสียงได้เท่าไร
+โดยจากรูปที่ 1 จะเห็นว่า มีพลังงานเสียงความถี่หลายจำนวน ซึ่งมีระดับความดังที่แตกต่างกัน และความดังเสียงที่ผ่านกำแพงนี้ไปก็จะถูกลดทอนในระดับที่แตกต่างกันตามความถี่ต่าง ๆ เช่น
+ ความถี่ี่ 125 Hz 80–60 = 20 dB</description>
     </item>
     
     <item>
