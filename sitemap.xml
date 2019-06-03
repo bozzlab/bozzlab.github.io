@@ -88,6 +88,10 @@
   </url>
   
   <url>
+    <loc>/test/</loc>
+  </url>
+  
+  <url>
     <loc>/archive/</loc>
   </url>
   
