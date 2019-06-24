@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ  :: Bozzlab — Personal Website</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="สร้างบล็อคด้วย Markdown &#43; Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
+ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
+ Step แรก Install &#43; Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
+mkdir hugo  หลังจากนั้น install hugo โดยสามารถเข้าไปได้ที่ Click เพื่ออ่าน Docs ซึ่งแต่ละ OS จะไม่เหมือนกัน โดยในบทความนี้จะอ้างอิงจาก Ubuntu นะครับ
+sudo apt-get install hugo  หลังจากที่ทำการ install แล้วลองเช็ค version ดูครับ
+hugo version  
+โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา"/>
+<meta name="keywords" content="Bozzlab"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/post/hugo-blog/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ  :: Bozzlab — Personal Website" />
+<meta name="twitter:description" content="สร้างบล็อคด้วย Markdown &#43; Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
+ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
+ Step แรก Install &#43; Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
+mkdir hugo  หลังจากนั้น install hugo โดยสามารถเข้าไปได้ที่ Click เพื่ออ่าน Docs ซึ่งแต่ละ OS จะไม่เหมือนกัน โดยในบทความนี้จะอ้างอิงจาก Ubuntu นะครับ
+sudo apt-get install hugo  หลังจากที่ทำการ install แล้วลองเช็ค version ดูครับ
+hugo version  
+โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="Bozz Srinikorn" />
+<meta name="twitter:image" content="/img/hugo.png">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ  :: Bozzlab — Personal Website">
+<meta property="og:description" content="สร้างบล็อคด้วย Markdown &#43; Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
+ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
+ Step แรก Install &#43; Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
+mkdir hugo  หลังจากนั้น install hugo โดยสามารถเข้าไปได้ที่ Click เพื่ออ่าน Docs ซึ่งแต่ละ OS จะไม่เหมือนกัน โดยในบทความนี้จะอ้างอิงจาก Ubuntu นะครับ
+sudo apt-get install hugo  หลังจากที่ทำการ install แล้วลองเช็ค version ดูครับ
+hugo version  
+โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา" />
+<meta property="og:url" content="/post/hugo-blog/" />
+<meta property="og:site_name" content="ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ " />
+<meta property="og:image" content="/img/hugo.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-06-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+</head>
+<body class="dark-theme">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">Bozzlab</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/profile">Profile</a></li>
+        
+      
+        
+          <li><a href="/archive">blog</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/profile">Profile</a></li>
+      
+    
+      
+        <li><a href="/archive">blog</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="/post/hugo-blog/">ใช้ Markdown + Hugo สร้าง Blog/Website แบบง่าย ๆ</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2019-06-21
+        </span>
+      
+      <span class="post-author">— Written by Bozz Srinikorn</span>
+      
+        <span class="post-read-time">— 2 min read</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/markdown/">Markdown</a>&nbsp;
+        
+          #<a href="/tags/blog/">Blog</a>&nbsp;
+        
+          #<a href="/tags/hugo/">Hugo</a>&nbsp;
+        
+          #<a href="/tags/website/">Website</a>&nbsp;
+        
+          #<a href="/tags/base16/">base16</a>&nbsp;
+        
+      </span>
+    
+
+    
+      
+        <img src="/img/hugo.png" class="post-cover" />
+      
+    
+
+    <div class="post-content">
+      
+
+<h1 id="สร-างบล-อคด-วย-markdown-hugo">สร้างบล็อคด้วย Markdown + Hugo</h1>
+
+<blockquote>
+<p>เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ</p>
+
+<p>ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ</p>
+</blockquote>
+
+<h2 id="step-แรก-install-setup-project-ก-อนนะคร-บ">Step แรก Install + Setup Project ก่อนนะครับ</h2>
+
+<hr />
+
+<p>ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ</p>
+
+<pre><code class="language-shell">mkdir hugo
+</code></pre>
+
+<p>หลังจากนั้น install hugo โดยสามารถเข้าไปได้ที่ <a href="https://gohugo.io/getting-started/installing/">Click</a> เพื่ออ่าน Docs ซึ่งแต่ละ OS จะไม่เหมือนกัน โดยในบทความนี้จะอ้างอิงจาก Ubuntu นะครับ</p>
+
+<pre><code class="language-shell">sudo apt-get install hugo
+</code></pre>
+
+<p>หลังจากที่ทำการ install แล้วลองเช็ค version ดูครับ</p>
+
+<pre><code class="language-shell">hugo version
+</code></pre>
+
+<p><br>
+<img src="/img/hugo-p1.png" alt="image" />
+<br></p>
+
+<p>โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย
+โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา</p>
+
+<pre><code class="language-shell">hugo new site my-first-blog
+</code></pre>
+
+<p><br>
+<img src="/img/hugo-p2.png" alt="image" />
+<br></p>
+
+<p>ต่อจากนั้นเราก็จะเห็นว่า มี folder เกิดขึ้นมาใหม่ใน project เรา ซึ่งมันก็คือ blog ของเรานั้นเอง</p>
+
+<p><br>
+<img src="/img/hugo-p3.png" alt="image" />
+<br></p>
+
+<p>ถ้าเข้าไปจะเห็น structure ต่าง ๆ</p>
+
+<p><br>
+<img src="/img/hugo-p4.png" alt="image" />
+<br></p>
+
+<blockquote>
+<p>ซึ่งถ้าใครเคยผ่านการเขียนเว็บมา ก็บอกเลยว่าต่อจากนี้มันจะง่ายมาก ๆ หรือต่อให้ไม่เคยเขียนมา ก็ยังง่ายอยู่ดี โถ่เอ้ย</p>
+</blockquote>
+
+<p>โดยผมจะไม่อธิบายนะครับว่า แต่ละส่วนทำหน้าที่หรือทำงานยังไง เพราะผมขี้เกียจ จริงๆ เขียนไว้กันลืมเฉย ๆ</p>
+
+<p>อันที่จริง ชื่อ folder ค่อนข้างตรงอยู่แล้ว ถ้าติดตรงไหนก็คอมเม้นถามได้ แล้วผมก็จะไปตอบ ถ้าผมไม่ขี้เกียจ</p>
+
+<h2 id="step-สอง-download-install-theme">Step สอง Download + Install Theme</h2>
+
+<hr />
+
+<ul>
+<li>ก่อนจะไปเข้าการเขียนบล็อค ให้ไปเลือก Theme ก่อน <a href="https://themes.gohugo.io/">คลิกที่นี้ เพื่อไปเลือก theme </a></li>
+</ul>
+
+<blockquote>
+<p>ซึ่งจริง ๆ ตรงนี้ข้ามไปก็ได้ครับ ถ้าขี้เกียจ ใครอยากข้าม step ให้ไปลองสร้าง post ได้เลยครัช</p>
+</blockquote>
+
+<p><br>
+<img src="/img/hugo-theme.png" alt="image" />
+<br></p>
+
+<p>เลือกได้ตามใจชอบ<br />
+พอเลือกได้แล้วก็ Clone จาก github มาได้เลยครับ</p>
+
+<ul>
+<li>ก่อนอื่นอย่าลืม git init</li>
+</ul>
+
+<pre><code class="language-shell">git init 
+git submodule add https://github.com/htdvisser/hugo-base16-theme.git themes/base16  
+echo 'theme = &quot;base16&quot;' &gt;&gt; config.toml
+</code></pre>
+
+<p>cmd ด้านบน คือ git init แล้วเพื่อให้เราใช้ git ได้และเพื่อสร้างความง่อยให้ตัวเอง</p>
+
+<p>เราไม่จำต้องที่ต้องเข้าโฟลเดอร์ theme แล้วไป clone theme ลงมา เราสามารถทำได้ในทันที โดยใช้ git submodule add ตามด้วย git theme ที่เราเลือก แล้ว directory ที่จะไปอยู๋</p>
+
+<p>มากไปกว่านั้น แล้ว engine จะรู้ได้ยังไงว่ามี theme ใหม่มา
+เราใช้ echo ให้เป็นประโยชน์ โดยการบอกมันซะ ตรงๆ เลย</p>
+
+<blockquote>
+<p>config ทุกอย่างจะอยู่ในไฟล์ config.toml นะครับ ห้ามลบเด็ดขาด
+ลบได้แหละ แต่สร้างใหม่ด้วย</p>
+</blockquote>
+
+<h2 id="step-สาม-สร-าง-post">Step สาม สร้าง Post</h2>
+
+<hr />
+
+<p>ที่นี้เราจะลองเพิ่ม post เข้าไปในเว็บของเราก่อน  โดยการสั่ง cmd ให้ hugo generate</p>
+
+<pre><code class="language-shell">hugo new post/my-first-post.md
+</code></pre>
+
+<p>จากนั้นให้ลองเข้าไปดูที่ content/post</p>
+
+<p><br>
+<img src="/img/hugo-list-blog.png" alt="image" />
+<br></p>
+
+<p>จะเห็นว่ามีชื่อไฟล์ markdown ที่เราสร้างไว้ ซึ่งเราสามรถใช้ editor เพื่อเปิดมันดูได้ โดยของผมเป็น vscode ตอนแรกจะใช้ vim แต่ไม่ดีกว่า sad ไป</p>
+
+<p><img src="/img/hugo-blog.png" alt="image" /></p>
+
+<p>จะเห็นได้ว่ามี syntax ให้มาเป็น default เช่น วันเดือนปี หัวข้อ ชื่อคนเขียน โดยสามารถเพิ่มได้อีก เช่นพวกรูป tag อะไรต่าง ๆ ผมลืมไปแล้ว</p>
+
+<blockquote>
+<p>ก่อนที่เราจะเวิ่นเว้อระบายความในใจลงบล็อค ให้ลองไป test ก่อนว่า ไอที่ทำมาทั้งหมดเนี่ย มันใช้ได้ไหม ไอคนเขียนมั่วรึเปล่า</p>
+</blockquote>
+
+<h2 id="step-arsenal-ทำการลอง-run-server">Step Arsenal ทำการลอง Run Server</h2>
+
+<hr />
+
+<p>โอเค ลองมาเช็คกันก่อนว่า เว็บเราสามารถใช้ได้ไหม</p>
+
+<pre><code class="language-shell">hugo server -D
+</code></pre>
+
+<ul>
+<li>หลังจาก run server ให้ลองเข้าไป port ที่ hugo เปิดให้เรา
+อันนี้ถ้าใครทำตาม แล้วได้ port ไม่เหมือนกัน ไม่ต้องแปลกใจ เพราะผมใช้ port เยอะ มากจนไม่รู้ว่าต้องเปิดและปิดตัวไหน</li>
+</ul>
+
+<p><img src="/img/hugo-serv.png" alt="image" /></p>
+
+<ul>
+<li>โดยแต่ละเครื่องอาจจะไม่เหมือน ซึ่ง default ถ้าผมจำไม่ผิดจะเป็น :1313 ซึ่งถ้าผิด ก็ผิดแหละ เพราะผมจำไม่ได้ คาดหวังอะไรวะ</li>
+</ul>
+
+<blockquote>
+<p>หลังจากนั้นก็เข้าไป port เลย</p>
+</blockquote>
+
+<p><img src="/img/hugo-runweb.png" alt="image" /></p>
+
+<p>จะเห็นได้ว่า โอเคเว็บสามารถใช้งานได้แล้ว</p>
+
+<p>ลองตกแต่งสักหน่อย ก็เข้าไปตาม path นั้นเลย</p>
+
+<pre><code class="language-shell">vi layouts/partials/hero.html 
+</code></pre>
+
+<p>ถ้าสมมุติไม่มีใน folder หลักของเรา ก็ให้ก็อป layouts จาก theme มาใส่ใน path layouts/ ของ project เราเลยนะครับ</p>
+
+<p><img src="/img/hugo-cm.png" alt="image" /></p>
+
+<ul>
+<li>ถึงตรงนี้คิดว่า น่าจะได้พอสมควรแล้ว
+อันที่จริงผมขี้เกียจเขียนต่อ
+คือท่าต่อไป ก็ตกแต่งตามใจชอบเลยครับ จะ css + js อันนี้ก็แล้วแต่ความสามารถ หรือจะ add-ons ก็ลองดูว่า theme ที่เราเลือกมารองรับไหม</li>
+</ul>
+
+<blockquote>
+<p>ส่วนเรื่อง deploy เอาไว้ part ต่อไปนะครับ ตอนนี้ขี้เกียจแล้ว
+แต่ deploy จะง่ายๆ มาก</p>
+</blockquote>
+
+<ul>
+<li>ส่วนถ้าใครยังงงอยู่ว่า Hugo คืออะไร
+ก็คือ คนที่ร้อง 99 problem อะครับ ทั้งร้องทั้งแต่งเอง ต้องเหงาแค่ไหน คิดดู</li>
+</ul>
+
+<h3 id="ปล-ไม-ม-ป-มแชร-นะคร-บ-ไม-ได-ทำไว-ข-เก-ยจ-ก-อปล-งค-ไปโพสเอาเองเลย">ปล. ไม่มีปุ่มแชร์นะครับ ไม่ได้ทำไว้ ขี้เกียจ ก็อปลิงค์ไปโพสเอาเองเลย</h3>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+          
+            <span class="button next">
+              <a href="/post/hello/">
+                <span class="button__text"> !&gt;_ Bozzlab</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    
+
+<script id="dsq-count-scr" src="//bozzlab-github-io.disqus.com/count.js" async></script>
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://bozzlab-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+
+
+
+
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">Bozzlab @ 2019</div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>
