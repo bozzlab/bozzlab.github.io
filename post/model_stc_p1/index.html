@@ -394,8 +394,7 @@ Sound Transmission Loss คืออะไร ?</p>
         f = self.f
         fc = SinglePanel.Crifreq(self)
         T_1 = [(20 * (np.log10(self.Mass * f[i])) - 44) for i in range(0, len(f)) if f[i] &lt;= fc]
-        T_2 = [(20 * (np.log10(self.Mass * f[i]))) + (10 * np.log10((2 * self.Damp * f[i]) / (np.pi * fc))) - 48 for i
-               in range(0, len(f)) if f[i] &gt;= fc]
+        T_2 = [(20 * (np.log10(self.Mass * f[i]))) + (10 * np.log10((2 * self.Damp * f[i]) / (np.pi * fc))) - 48 for i in range(0, len(f)) if f[i] &gt;= fc]
         TL = T_1 + T_2
         return TL
 </code></pre>
@@ -496,8 +495,7 @@ def plot(self):  # Visualize the Transmission loss data and STC-Contour
     plt.figure(figsize=(18, 8))
     plt.plot(TL, 'b', linewidth=2)
     plt.plot(s, 'g--', linewidth=1.8)
-    plt.annotate('Initials : Peem Srinikorn', xy=(0.85, 0.04), fontsize=12, bbox=dict(facecolor='cyan', alpha=0.5),
-                     xycoords='axes fraction')
+    plt.annotate('Initials : Peem Srinikorn', xy=(0.85, 0.04), fontsize=12, bbox=dict(facecolor='cyan', alpha=0.5),xycoords='axes fraction')
     plt.title('Single Panel Sound Transmission loss', fontsize=18)
     plt.xlabel('1/3 Octave Frequency [Hz]', fontsize=15)
     plt.ylabel('R Transmiss loss [dB]', fontsize=15)

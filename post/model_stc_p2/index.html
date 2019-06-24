@@ -221,7 +221,8 @@
 <pre><code class="language-python">def freq(self):
     me = ((self.pair*(self.c**2))/self.d)*((1/self.Mass_A)+(1/self.Mass_B))
     f0 = (1/(2*np.pi))*(np.sqrt(me))
-    fl = 55/self.d        return f0,fl
+    fl = 55/self.d        
+    return f0,fl
 
 def Con1(self): # f &lt; f0
     f0 = DoublePanel.freq(self)[0]
