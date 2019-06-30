@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Bozzlab</title>
-    <link>/post/</link>
+    <link>https://bozzlab.github.io/post/</link>
     <description>Recent content in Posts on Bozzlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bozzlab @ 2019</copyright>
     <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bozzlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Build &#43; Deploy] Hugo ขึ้น GitHub Pages แบบคลู ๆ </title>
-      <link>/post/hugo-build/</link>
+      <link>https://bozzlab.github.io/post/hugo-build/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/hugo-build/</guid>
+      <guid>https://bozzlab.github.io/post/hugo-build/</guid>
       <description>Build/Deploy Hugo to GitHub Pages  เกริ่นก่อนว่า บทความนี้เป็น Part ต่อของ [Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown
 ในบทความนี้จะกล่าวถึงขั้นตอนการ Build และ Deploy ขึ้น GitHub Pages นะครับ ส่วนการสร้าง blog ด้วย markdown กดลิงค์ด้านบนเลย
  Step แรก สร้าง Repository บน GitHub  เนื่องจากว่าเราต้องการให้ blog ของเราเป็น website ที่คนอื่นสามารถเข้ามาดูได้ ซึ่งอันที่จริงแล้วเราจะทำ server เอง หรือท่ายาก ๆ cluster อะไรบ้าบอ ก็ได้
@@ -27,10 +27,10 @@
     
     <item>
       <title>[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown</title>
-      <link>/post/hugo-blog/</link>
+      <link>https://bozzlab.github.io/post/hugo-blog/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/hugo-blog/</guid>
+      <guid>https://bozzlab.github.io/post/hugo-blog/</guid>
       <description>สร้างบล็อคด้วย Markdown + Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
 ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
  Step แรก Install + Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
@@ -42,19 +42,19 @@ hugo version
     
     <item>
       <title> !&gt;_ Bozzlab</title>
-      <link>/post/hello/</link>
+      <link>https://bozzlab.github.io/post/hello/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/hello/</guid>
+      <guid>https://bozzlab.github.io/post/hello/</guid>
       <description>Bozzlab I told you already, GENIUS!</description>
     </item>
     
     <item>
       <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2]</title>
-      <link>/post/model_stc_p2/</link>
+      <link>https://bozzlab.github.io/post/model_stc_p2/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/model_stc_p2/</guid>
+      <guid>https://bozzlab.github.io/post/model_stc_p2/</guid>
       <description>Peem Srinikorn บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
  บทความนี้เป็น Part 2 จะเกี่ยวข้องกับการ Predict TL ในระบบผนัง Double Panel, Double Panel with Absorber, Double Panel with Stud, Double Panel with Absorber and Stud, Algorithm flow รวมถึงเปรียบเทียบว่าผนังแต่ละประเภทมีลักษณะผลการ Predict ค่า Sound Tranmission loss (TL)อย่างไรบ้าง
  สำหรับใครที่ยังไม่ได้อ่าน Part 1 เกี่ยวกับ STC/TL ในฉบับเบื้องต้นและวิธีการ Predict แบบ Single Panel (Click ที่นี้ !!)
@@ -65,10 +65,10 @@ hugo version
     
     <item>
       <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC)</title>
-      <link>/post/model_stc_p1/</link>
+      <link>https://bozzlab.github.io/post/model_stc_p1/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/model_stc_p1/</guid>
+      <guid>https://bozzlab.github.io/post/model_stc_p1/</guid>
       <description>บทความนี้จะกล่าวถึง วิธีการคำนวณและผลลัพธ์แบบคร่าว ๆ ซึ่งใช้เพื่อการศึกษาเท่านั้น ไม่สามารถนำค่าคำนวณ ไปใช้เพื่ออ้างอิงสำหรับ การก่อสร้างจริงได้นะครับ
 Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulation, Stud Connection
  ก่อนอื่น เรามาดูกันว่า Sound Tranmission Loss , STC คืออะไรกันก่อน Sound Transmission Loss คืออะไร ?

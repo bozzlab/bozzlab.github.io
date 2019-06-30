@@ -3,149 +3,149 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/blog/</loc>
+    <loc>https://bozzlab.github.io/tags/blog/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://bozzlab.github.io/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/build/</loc>
+    <loc>https://bozzlab.github.io/tags/build/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/deploy/</loc>
+    <loc>https://bozzlab.github.io/tags/deploy/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/github-pages/</loc>
+    <loc>https://bozzlab.github.io/tags/github-pages/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>https://bozzlab.github.io/tags/hugo/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
+    <loc>https://bozzlab.github.io/tags/markdown/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://bozzlab.github.io/post/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://bozzlab.github.io/tags/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/hugo-build/</loc>
+    <loc>https://bozzlab.github.io/post/hugo-build/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/base16/</loc>
+    <loc>https://bozzlab.github.io/tags/base16/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/website/</loc>
+    <loc>https://bozzlab.github.io/tags/website/</loc>
     <lastmod>2019-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/hugo-blog/</loc>
+    <loc>https://bozzlab.github.io/post/hugo-blog/</loc>
     <lastmod>2019-06-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/hello/</loc>
+    <loc>https://bozzlab.github.io/post/hello/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bozzlab/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/profile/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/welcome/</loc>
+    <loc>https://bozzlab.github.io/tags/bozzlab/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/acoustics/</loc>
+    <loc>https://bozzlab.github.io/profile/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bozzlab.github.io/tags/welcome/</loc>
+    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bozzlab.github.io/tags/acoustics/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/model/</loc>
+    <loc>https://bozzlab.github.io/tags/model/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/oop/</loc>
+    <loc>https://bozzlab.github.io/tags/oop/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
+    <loc>https://bozzlab.github.io/tags/python/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/stc/</loc>
+    <loc>https://bozzlab.github.io/tags/stc/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/model_stc_p2/</loc>
+    <loc>https://bozzlab.github.io/post/model_stc_p2/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/model_stc_p1/</loc>
+    <loc>https://bozzlab.github.io/post/model_stc_p1/</loc>
     <lastmod>2018-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/archive/</loc>
+    <loc>https://bozzlab.github.io/archive/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://bozzlab.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
