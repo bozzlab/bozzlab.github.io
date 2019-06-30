@@ -15,6 +15,24 @@
   </url>
   
   <url>
+    <loc>/tags/build/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/deploy/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/github-pages/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/hugo/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -39,12 +57,6 @@
   </url>
   
   <url>
-    <loc>/tags/website/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/post/hugo-build/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
@@ -52,6 +64,12 @@
   <url>
     <loc>/tags/base16/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/website/</loc>
+    <lastmod>2019-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

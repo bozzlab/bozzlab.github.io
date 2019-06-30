@@ -22,6 +22,33 @@
     </item>
     
     <item>
+      <title>Build</title>
+      <link>/tags/build/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deploy</title>
+      <link>/tags/deploy/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github Pages</title>
+      <link>/tags/github-pages/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
@@ -40,20 +67,20 @@
     </item>
     
     <item>
-      <title>Website</title>
-      <link>/tags/website/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/website/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>base16</title>
       <link>/tags/base16/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/base16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>/tags/website/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/website/</guid>
       <description></description>
     </item>
     
