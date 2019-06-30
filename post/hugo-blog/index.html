@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ  :: Bozzlab — Personal Website</title>
+    <title>[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown :: Bozzlab — Personal Website</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -29,7 +29,7 @@ hugo version
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ  :: Bozzlab — Personal Website" />
+<meta name="twitter:title" content="[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown :: Bozzlab — Personal Website" />
 <meta name="twitter:description" content="สร้างบล็อคด้วย Markdown &#43; Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
 ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
  Step แรก Install &#43; Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
@@ -44,7 +44,7 @@ hugo version
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ  :: Bozzlab — Personal Website">
+<meta property="og:title" content="[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown :: Bozzlab — Personal Website">
 <meta property="og:description" content="สร้างบล็อคด้วย Markdown &#43; Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
 ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
  Step แรก Install &#43; Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
@@ -53,7 +53,7 @@ sudo apt-get install hugo  หลังจากที่ทำการ install
 hugo version  
 โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา" />
 <meta property="og:url" content="/post/hugo-blog/" />
-<meta property="og:site_name" content="ใช้ Markdown &#43; Hugo สร้าง Blog/Website แบบง่าย ๆ " />
+<meta property="og:site_name" content="[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown" />
 <meta property="og:image" content="/img/hugo.png">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -144,7 +144,7 @@ hugo version
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="/post/hugo-blog/">ใช้ Markdown + Hugo สร้าง Blog/Website แบบง่าย ๆ</a></h2>
+    <h2 class="post-title"><a href="/post/hugo-blog/">[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -295,12 +295,12 @@ echo 'theme = &quot;base16&quot;' &gt;&gt; config.toml
 <p>จากนั้นให้ลองเข้าไปดูที่ content/post</p>
 
 <p><br>
-<img src="/img/hugo-list-blog.png" alt="image" />
+<img src="/img/hugo-list-blog-1.png" alt="image" />
 <br></p>
 
 <p>จะเห็นว่ามีชื่อไฟล์ markdown ที่เราสร้างไว้ ซึ่งเราสามรถใช้ editor เพื่อเปิดมันดูได้ โดยของผมเป็น vscode ตอนแรกจะใช้ vim แต่ไม่ดีกว่า sad ไป</p>
 
-<p><img src="/img/hugo-blog.png" alt="image" /></p>
+<p><img src="/img/hugo-blog-1.png" alt="image" /></p>
 
 <p>จะเห็นได้ว่ามี syntax ให้มาเป็น default เช่น วันเดือนปี หัวข้อ ชื่อคนเขียน โดยสามารถเพิ่มได้อีก เช่นพวกรูป tag อะไรต่าง ๆ ผมลืมไปแล้ว</p>
 
@@ -371,6 +371,13 @@ echo 'theme = &quot;base16&quot;' &gt;&gt; config.toml
           <hr />
         </div>
         <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="/post/hugo-build/">
+                <span class="button__icon">←</span>
+                <span class="button__text">[Build &#43; Deploy] Hugo ขึ้น GitHub Pages แบบคลู ๆ </span>
+              </a>
+            </span>
           
           
             <span class="button next">
