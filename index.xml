@@ -55,10 +55,10 @@ hugo version
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://bozzlab.github.io/profile/</guid>
-      <description>Peem Srinikorn Python/Back-End Developer.
+      <description>Peem Srinikorn Python/Back-End/DevOps Engineer
 Bangkok,Thailand
      
-Education [{ &amp;quot;Education&amp;quot; : { &amp;quot;Degree&amp;quot;: &amp;quot;Bachelor in Engineering&amp;quot;, &amp;quot;Class of&amp;quot;: 2014, &amp;quot;University&amp;quot;: &amp;quot;King Mongkut&#39;s Institute of Technology Ladkrabang (KMTIL)&amp;quot; }]  Experience &amp;lt;Work Exp=&amp;quot;Work Experience&amp;quot;&amp;gt; &amp;lt;May 2019 - Present&amp;gt; • Software Engineer @ &amp;lt;Quantera Co.,LTD&amp;gt; | |&amp;gt; Improving the Automative Robot trading system using MQL4 |&amp;gt; Develop the ETL system, Which control the Dataflow, | APIs and Cron Jobs on Ubuntu server (AWS).</description>
+Education [{ &amp;quot;Education&amp;quot; : { &amp;quot;Degree&amp;quot;: &amp;quot;Bachelor in Engineering&amp;quot;, &amp;quot;Year&amp;quot;: 2014, &amp;quot;University&amp;quot;: &amp;quot;King Mongkut&#39;s Institute of Technology Ladkrabang (KMTIL)&amp;quot; }]  Experience &amp;lt;Work Exp=&amp;quot;Work Experience&amp;quot;&amp;gt; &amp;lt;May 2019 - Present&amp;gt; • Software Engineer @ &amp;lt;Quantera Co.,LTD&amp;gt; | |&amp;gt; Improving the Automative Robot trading system using MQL |&amp;gt; Develop the Robot trading, Which managing REST APIs, |Streaming of broker and collaboration with AI system.</description>
     </item>
     
     <item>

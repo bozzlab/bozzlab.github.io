@@ -226,14 +226,12 @@
 <br></p>
 
 <ul>
-<li>สร้าง folder สำหรับการ build/deploy</li>
-</ul>
+<li><p>สร้าง folder สำหรับการ build/deploy</p>
 
 <pre><code class="language-shell">mkdir hugo-build
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>หลังจากนั้นก็กลับไปที่ path ของ project เรา</li>
+<li><p>หลังจากนั้นก็กลับไปที่ path ของ project เรา</p></li>
 </ul>
 
 <p>แล้ว cmd ตามด้านล่างนี้</p>
@@ -274,22 +272,24 @@
 </blockquote>
 
 <ul>
-<li>อย่างแรกก็ทำการ Git init ก่อน</li>
-</ul>
+<li><p>อย่างแรกก็ทำการ Git init ก่อน</p>
 
 <pre><code class="language-shell">git init 
 git add .
 git commit -m &quot;fisrt commit&quot;
 git remote add origin https://github.com/noobmaster6996/noobmaster6996.github.io.git
 git push -u origin master
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>โดย git init ก็คือ ทำให้เราใช้ git ได้ใน path นั้น</li>
-<li>git add ก็คือ add . ก็คือ add ทุกอย่างใน path ที่เราอยู่ ณ ตอนนั้น</li>
-<li>ส่วน git commit อันนี้ ก็ตามชื่อคำสั่ง จะพิมอะไรกวนๆ ไปก็ได้ ถ้าไม่เกรงใจคนที่มาอ่านต่อ หรือ ถ้าไม่อยาก add ก็ใช้ -am ได้นะครับ</li>
-<li>git remote add origin อันนี้ก็คือการทำให้ git ของเราที่อยู่ local สามารถติดต่อกับ repository ของ github ได้</li>
-<li>และสุดท้าย git push ก็คืิอ push สิ่งที่เรา add มาให้ไปอยู่บน repository ของ github</li>
+<li><p>โดย git init ก็คือ ทำให้เราใช้ git ได้ใน path นั้น</p></li>
+
+<li><p>git add ก็คือ add . ก็คือ add ทุกอย่างใน path ที่เราอยู่ ณ ตอนนั้น</p></li>
+
+<li><p>ส่วน git commit อันนี้ ก็ตามชื่อคำสั่ง จะพิมอะไรกวนๆ ไปก็ได้ ถ้าไม่เกรงใจคนที่มาอ่านต่อ หรือ ถ้าไม่อยาก add ก็ใช้ -am ได้นะครับ</p></li>
+
+<li><p>git remote add origin อันนี้ก็คือการทำให้ git ของเราที่อยู่ local สามารถติดต่อกับ repository ของ github ได้</p></li>
+
+<li><p>และสุดท้าย git push ก็คืิอ push สิ่งที่เรา add มาให้ไปอยู่บน repository ของ github</p></li>
 </ul>
 
 <blockquote>
@@ -317,23 +317,21 @@ git push -u origin master
 </blockquote>
 
 <ul>
-<li>ในกรณีที่ชื่อ repository ของเราเป็น format ตามาตรฐานของ GitHub Pages</li>
-</ul>
+<li><p>ในกรณีที่ชื่อ repository ของเราเป็น format ตามาตรฐานของ GitHub Pages</p>
 
 <pre><code class="language-shell">&lt;username&gt;.github.io
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>ก็สามารถใช้ได้ทันทีเลยครับ</p>
 
 <ul>
-<li>แต่ถ้ากรณีที่เราเปิด Repo มาแค่จะทำเป็น Page เฉยๆ แบบด้านล่าง ก็มีข้อควรระวังเรื่อง Path กับ permalink , https เป็นต้น แต่โดยทั่วไปใช้งานได้ปกติ</li>
-</ul>
+<li><p>แต่ถ้ากรณีที่เราเปิด Repo มาแค่จะทำเป็น Page เฉยๆ แบบด้านล่าง ก็มีข้อควรระวังเรื่อง Path กับ permalink , https เป็นต้น แต่โดยทั่วไปใช้งานได้ปกติ</p>
 
 <pre><code class="language-shell">&lt;username&gt;.github.io/&lt;repository_name&gt;
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>เพื่อความแน่ใจ ลองเข้าไปที่ Settings ของ Repository แล้วไปที่ GitHub Pages</li>
+<li><p>เพื่อความแน่ใจ ลองเข้าไปที่ Settings ของ Repository แล้วไปที่ GitHub Pages</p></li>
 </ul>
 
 <p><br>
