@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bozzlab</title>
-    <link>https://bozzlab.github.io/</link>
-    <description>Recent content on Bozzlab</description>
+    <title>Posts on Bozzlab</title>
+    <link>https://bozzlab.github.io/posts/</link>
+    <description>Recent content in Posts on Bozzlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bozzlab @ 2019</copyright>
     <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://bozzlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bozzlab.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -49,17 +49,6 @@ hugo version โอเค ทีนี้ เราก็จะเริ่ม�
     </item>
     
     <item>
-      <title>Profile</title>
-      <link>https://bozzlab.github.io/profile/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://bozzlab.github.io/profile/</guid>
-      <description>Peem Srinikorn Python/Back-End Developer
-Bangkok,Thailand
-Education [{ &amp;#34;Education&amp;#34; : { &amp;#34;Degree&amp;#34;: &amp;#34;Bachelor in Engineering&amp;#34;, &amp;#34;Year&amp;#34;: 2014, &amp;#34;University&amp;#34;: &amp;#34;King Mongkut&amp;#39;s Institute of Technology Ladkrabang (KMTIL)&amp;#34; }] Experience &amp;lt;Work Exp=&amp;#34;Work Experience&amp;#34;&amp;gt; &amp;lt;May 2019 - Present&amp;gt; • Software Engineer @ &amp;lt;Quantera Co.,LTD&amp;gt; | |&amp;gt; Improving the Automative Robot trading system using MQL |&amp;gt; Develop the Robot trading, Which managing REST APIs, |Streaming of broker and collaboration with AI system. |Implemented by Golang, Python, Docker, Kubernetes.</description>
-    </item>
-    
-    <item>
       <title>มาลองใช้ Python สร้างโมเดล Predict ค่า Sound Transmission loss (TL/STC) [Part-2]</title>
       <link>https://bozzlab.github.io/posts/model_stc_p2/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
@@ -83,15 +72,6 @@ Click อ่าน Part 2 : Double Panel and Double Panel with Absorber Insulati
  Sound Transmission Loss คืออะไร ?  คือ ดัชนีที่บ่งบอกถึงประสิทธิภาพของการป้องกันเสียง ในทีนี้เราจะหมายถึง ผนัง กำแพง กระจก ที่เป็นตัวกลางกั้นห้องนั้น (Partition) ว่ามีประสิทธิภาพป้องกันเสียงได้เท่าไร
 โดยจากรูปที่ 1 จะเห็นว่า มีพลังงานเสียงความถี่หลายจำนวน ซึ่งมีระดับความดังที่แตกต่างกัน และความดังเสียงที่ผ่านกำแพงนี้ไปก็จะถูกลดทอนในระดับที่แตกต่างกันตามความถี่ต่าง ๆ เช่น
  ความถี่ี่ 125 Hz 80–60 = 20 dB ความถี่ 500 Hz 120–88 = 32 dB ความถีี่ 1,000 Hz 90–40 = 50 dB</description>
-    </item>
-    
-    <item>
-      <title>Article/Blog</title>
-      <link>https://bozzlab.github.io/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bozzlab.github.io/archive/</guid>
-      <description></description>
     </item>
     
   </channel>

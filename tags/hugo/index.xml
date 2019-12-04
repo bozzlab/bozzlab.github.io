@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Bozzlab</title>
@@ -14,30 +14,29 @@
     
     <item>
       <title>[Build &#43; Deploy] Hugo ขึ้น GitHub Pages แบบคลู ๆ </title>
-      <link>https://bozzlab.github.io/post/hugo-build/</link>
+      <link>https://bozzlab.github.io/posts/hugo-build/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://bozzlab.github.io/post/hugo-build/</guid>
+      <guid>https://bozzlab.github.io/posts/hugo-build/</guid>
       <description>Build/Deploy Hugo to GitHub Pages  เกริ่นก่อนว่า บทความนี้เป็น Part ต่อของ [Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown
-ในบทความนี้จะกล่าวถึงขั้นตอนการ Build และ Deploy ขึ้น GitHub Pages นะครับ ส่วนการสร้าง blog ด้วย markdown กดลิงค์ด้านบนเลย
- Step แรก สร้าง Repository บน GitHub  เนื่องจากว่าเราต้องการให้ blog ของเราเป็น website ที่คนอื่นสามารถเข้ามาดูได้ ซึ่งอันที่จริงแล้วเราจะทำ server เอง หรือท่ายาก ๆ cluster อะไรบ้าบอ ก็ได้
-เพียงแต่ว่าผมขี้เกียจมากเลย ใช้ github เนื่องจากง่าย เร็ว และใช้แม่งทุกวันอยู่แล้ว ตามนั้น
-  ก่อนอื่นเลย ก็สร้าง repository แบบ public โดยตั้งชื่อ Repo ตามที่เราต้องการ ไม่ต้องตามผมก็ได้ ตามใจตัวเอง ชีวิตเป็นของเรา</description>
+  ในบทความนี้จะกล่าวถึงขั้นตอนการ Build และ Deploy ขึ้น GitHub Pages นะครับ ส่วนการสร้าง blog ด้วย markdown กดลิงค์ด้านบนเลย
+ Step แรก สร้าง Repository บน GitHub   เนื่องจากว่าเราต้องการให้ blog ของเราเป็น website ที่คนอื่นสามารถเข้ามาดูได้ ซึ่งอันที่จริงแล้วเราจะทำ server เอง หรือท่ายาก ๆ cluster อะไรบ้าบอ ก็ได้
+  เพียงแต่ว่าผมขี้เกียจมากเลย ใช้ github เนื่องจากง่าย เร็ว และใช้แม่งทุกวันอยู่แล้ว ตามนั้น
+  ก่อนอื่นเลย ก็สร้าง repository แบบ public โดยตั้งชื่อ Repo ตามที่เราต้องการ ไม่ต้องตามผมก็ได้ ตามใจตัวเอง ชีวิตเป็นของเรา  หลังจากนั้นก็พักไว้ก่อน เดี๋ยวมาดูอีกที</description>
     </item>
     
     <item>
       <title>[Develop] สร้าง Blog แบบคลู ๆ ด้วย Markdown</title>
-      <link>https://bozzlab.github.io/post/hugo-blog/</link>
+      <link>https://bozzlab.github.io/posts/hugo-blog/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://bozzlab.github.io/post/hugo-blog/</guid>
+      <guid>https://bozzlab.github.io/posts/hugo-blog/</guid>
       <description>สร้างบล็อคด้วย Markdown + Hugo  เกริ่นก่อนว่า เขียนไว้ก่อนลืม ถ้าลองทำตามแล้วติดขัดตรงไหน google can help ครับ แต่ถ้าใครเบื่อ medium สิ่งนี้ก็ยังน่าสนใจอยู่ครับ
-ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
- Step แรก Install + Setup Project ก่อนนะครับ ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
-mkdir hugo  หลังจากนั้น install hugo โดยสามารถเข้าไปได้ที่ Click เพื่ออ่าน Docs ซึ่งแต่ละ OS จะไม่เหมือนกัน โดยในบทความนี้จะอ้างอิงจาก Ubuntu นะครับ
-sudo apt-get install hugo  หลังจากที่ทำการ install แล้วลองเช็ค version ดูครับ
-hugo version  
-โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา</description>
+  ถ้าใครเคยเขียนหรือรู้จัก Markdown หรือเคยเขียนเว็บมาแค่ HTML ก็ทำตามได้แล้วครับ gg ez มาก ๆ
+ Step แรก Install + Setup Project ก่อนนะครับ  ก่อนอื่นเราต้องสร้าง folder project กันก่อนนะครับ
+mkdir hugo หลังจากนั้น install hugo โดยสามารถเข้าไปได้ที่ Click เพื่ออ่าน Docs ซึ่งแต่ละ OS จะไม่เหมือนกัน โดยในบทความนี้จะอ้างอิงจาก Ubuntu นะครับ
+sudo apt-get install hugo หลังจากที่ทำการ install แล้วลองเช็ค version ดูครับ
+hugo version โอเค ทีนี้ เราก็จะเริ่มสร้างกันเลย โดยพิมพ์ cmd ตามด้านล่างนี้ hugo จะทำการ generate engine ออกมาให้เราใช้ใน directory ของเรา</description>
     </item>
     
   </channel>

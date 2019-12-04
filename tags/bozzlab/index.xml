@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bozzlab</title>
@@ -14,10 +14,10 @@
     
     <item>
       <title> !&gt;_ Bozzlab</title>
-      <link>https://bozzlab.github.io/post/hello/</link>
+      <link>https://bozzlab.github.io/posts/hello/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://bozzlab.github.io/post/hello/</guid>
+      <guid>https://bozzlab.github.io/posts/hello/</guid>
       <description>Bozzlab I told you already, GENIUS!</description>
     </item>
     
